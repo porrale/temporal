@@ -3,39 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archivos Compartidos</title>
+    <title>Material de la Materia</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
             text-align: center;
-            margin: 20px;
+            margin: 0;
+            padding: 20px;
         }
+
         h1 {
-            color: #333;
+            font-size: 2.5em;
         }
-        .files {
-            list-style: none;
-            padding: 0;
+
+        .container {
+            max-width: 800px;
+            margin: auto;
         }
-        .files li {
-            margin: 10px 0;
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
         }
-        .files a {
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card a {
             text-decoration: none;
-            color: #007bff;
-            font-size: 18px;
+            color: #ffeb3b;
+            font-size: 1.2em;
+            font-weight: bold;
         }
-        .files a:hover {
+
+        .card a:hover {
             text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
         }
     </style>
 </head>
 <body>
-    <h1>Archivos Compartidos</h1>
-    <ul class="files">
-        <li><a href="https://drive.google.com/file/d/ID_DEL_ARCHIVO1/view" target="_blank">Archivo 11</a></li>
-        <li><a href="https://drive.google.com/file/d/ID_DEL_ARCHIVO2/view" target="_blank">Archivo 2</a></li>
-        <li><a href="https://drive.google.com/file/d/ID_DEL_ARCHIVO3/view" target="_blank">Archivo 3</a></li>
-    </ul>
+
+    <h1>📚 Material de la Materia</h1>
+    
+    <div class="container">
+        <div class="card">
+            <p>📖 <strong>Presentación de la Materia</strong></p>
+            <a href="https://docs.google.com/presentation/d/19TmLyZSwBI3JYBfc2o5XWSfYhbIfEv9COX0oaXlvNJo/edit?usp=sharing" target="_blank">Ver presentación</a>
+        </div>
+
+        <div class="card">
+            <p>📝 <strong>Unidad 1</strong></p>
+            <a href="https://www.utnfravirtual.org.ar/mod/url/view.php?id=98725" target="_blank">Acceder a la Unidad 1</a>
+        </div>
+
+        <div class="card">
+            <p>📘 <strong>Libro de Referencia</strong></p>
+            <a href="https://www.researchgate.net/publication/359904834_Bioelectronica_y_Microsistemas_v2022" target="_blank">Bioelectrónica y Microsistemas</a>
+        </div>
+    </div>
+
+    <footer>
+        📌 Última actualización: <script>document.write(new Date().toLocaleDateString());</script>
+    </footer>
+
 </body>
 </html>
